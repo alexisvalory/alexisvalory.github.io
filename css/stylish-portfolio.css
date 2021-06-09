@@ -58,6 +58,7 @@ h2{
   color:#fff;
   border-color:#fff;
   background-color:#000;
+  border-radius: 3px;
 }
 
 .btn-lg:hover{
@@ -235,6 +236,7 @@ i.service-icon {
 
 .img-portfolio {
   margin: 0 auto;
+  border-radius: 3px;
 }
 
 /* Call to Action */
