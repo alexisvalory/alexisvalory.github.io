@@ -153,6 +153,7 @@ h2{
   z-index: 1;
 }
 
+
 #sidebar-wrapper.active {
   left: 0px;
   width: 250px;
