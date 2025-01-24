@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 
 <head>
     <title>Alexis Valory - Graphiste UI-UX, Motion 2D & Branding</title>
@@ -16,6 +16,9 @@
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Add custom JS here -->
+    <script src="js/script.js" defer></script>
 
 </head>
 
@@ -35,21 +38,227 @@
             <a href="en/index_en.html" class="btn btn-outline-success btn-lg">SWITCH TO ENGLISH 🇬🇧</a>
         </div>
     </div>
-    <!-- /Full Page Image Header Area -->
 
     <!-- Portfolio -->
     <div id="portfolio" class="portfolio">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2><b>👌 MES TRAVAUX 👌</b></h2>
-                    <hr>
-                </div>
-            </div>
+
+      <!-- Images Filter Buttons Section -->
+      <div class="row" id="filter-buttons">
+        <div class="col-md-12 text-center">
+            <h2><b>👌 MES TRAVAUX 👌</b></h2>
+            <br>
+              <button class="btn btn-sm active" data-filter="all">All</button>
+              <button class="btn btn-sm" data-filter="branding">Branding</button>
+              <button class="btn btn-sm" data-filter="motion">Motion</button>
+              <button class="btn btn-sm" data-filter="ui-ux">UI-UX</button>
+            <hr>
+        </div>
+      </div>
+
+<!-- Filterable Images / Cards Section -->
+      <div class="row col-md-12" id="filterable-cards">
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+            <a href="https://labergeriedudourelego.log.bzh/">
+                <img class="img-portfolio img-responsive" src="img/labergeriedudourelego.jpg" alt="vignette bergerie dour elego">
+                <h2>La Bergerie du Dour Elego<br><small>Identité Visuelle • Juillet 2024</small></h2>
+            </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+             <a href="idep.html">
+                <img class="img-portfolio img-responsive" src="img/idep_3.jpg" alt="vignette idep">
+                <h2>L'Institut de l'Entreprise<br><small>Identité Visuelle • Mai 2024</small></h2>
+            </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="ui-ux branding">
+            <a href="adeo_research.html">
+                <img class="img-portfolio img-responsive" src="img/adeo_research_4.jpg" alt="vignette adeo-research">
+                <h2>ADEO Research<br><small>Identité Visuelle & UI-UX Design • Février 2024</small></h2>
+            </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="ui-ux">
+            <a href="terra_maker.html">
+                <img class="img-portfolio img-responsive" src="img/terra_maker.gif" alt="x">
+                <h2>Terra Maker<br><small>Identité visuelle & UI-UX Design • Juin 2023</small></h2>
+            </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding ui-ux">
+            <a href="https://mbo.plus">
+                <img class="img-portfolio img-responsive" src="img/mbo_plus.jpg" alt="thumbnail MBO+">
+                <h2>MBO+<br><small>Identité Visuelle & UI-UX Design • Mars 2023</small></h2>
+            </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+            <a href="dcw.html">
+                <img class="img-portfolio img-responsive" src="img/dcw.jpg" alt="thumbnail designer chair warehouse">
+                <h2>Designer Chair Warehouse<br><small>Mise en page • Décembre 2022</small></h2>
+            </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+            <a href="orsay_immobilier.html">
+                <img class="img-portfolio img-responsive" src="img/orsay_immobilier.jpg" alt="thumbnail orsay immobilier branding">
+                <h2>Orsay Immobilier<br><small>Identité Visuelle • Septembre 2022</small></h2>
+            </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="ui-ux">
+                        <a href="ac_bio.html">
+                            <img class="img-portfolio img-responsive" src="img/ac_bio.jpg" alt="thumbnail ac bio ui ux design">
+                            <h2>AC Bio<br><small>UI-UX Design • Juin 2022</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="le_roux_attorneys_inc.html">
+                            <img class="img-portfolio img-responsive" src="img/le_roux_attorneys_inc_0.jpg" alt="brochure le roux attorneys inc">
+                            <h2>Le Roux Attorneys Inc<br><small>Mise en page • Mai 2022</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="lbc_and_cie.html">
+                            <img class="img-portfolio img-responsive" src="img/lbcandcie.gif" alt="thumbnail logo lbcandcie">
+                            <h2>LBC & CIE<br><small>Identité visuelle • Avril 2022</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="the_one.html">
+                            <img class="img-portfolio img-responsive" src="img/the_one_2000_1500_0.jpg" alt="thumbnail the one brochure">
+                            <h2>The One<br><small>Mise en page • Jan 2022</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="scierie_navet.html">
+                            <img class="img-portfolio img-responsive" src="img/scierie_navet_3.jpg" alt="scierie navet eure-et-loir logo">
+                            <h2>Scierie Navet<br><small>Identité visuelle • Nov 2021</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="ui-ux motion">
+                        <a href="https://roziereglobal.com/">
+                            <img class="img-portfolio img-responsive" src="img/roziere_global_1.jpg" alt="rozière global site internet vanuatu citoyenneté par investissement">
+                            <h2>Rozière<br><small>UI-UX Design & Animation 2D • 2021</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="inco.html">
+                            <img class="img-portfolio img-responsive" src="img/inco_2000_1200.jpg" alt="inco thumbnail">
+                            <h2>INCO<br><small>Identité visuelle • 2019-21</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding motion">
+                        <a href="powherintech.html">
+                            <img class="img-portfolio img-responsive" src="img/powherintech_1000_600.jpg" alt="powherintech inclusive diversity women tech">
+                            <h2>Pow'her in Tech<br><small>Identité visuelle, Mise en page & Montage vidéo • 2020</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="ui-ux">
+                        <a href="https://entrepreneurs.inco-group.co">
+                            <img class="img-portfolio img-responsive" src="img/impact_entrepreneurs_500_300.jpg" alt="xxx">
+                            <h2>Impact Entrepreneurs<br><small>UI-UX Design • 2019</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="creative_script.html">
+                            <img class="img-portfolio img-responsive" src="img/creative_script.jpg" alt="creative script screenwriter online plateform">
+                        <h2>Creative Script<br><small>Identité visuelle • 2019</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="motion">
+                        <a href="https://vimeo.com/329121769">
+                            <img class="img-portfolio img-responsive" src="img/ferme_500_300.jpg" alt="ferme hauts-vergers eure-et-loir">
+                        <h2>Ferme des Hauts-Vergers<br><small>Animation 2D • 2019</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="qubi.html">
+                            <img class="img-portfolio img-responsive" src="img/qubi_500_300.jpg" alt="qubi graphic identity logo catering italian restaurant personal chef">
+                            <h2>Qubi<br><small>Identité visuelle • 2018</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="fosset.html">
+                            <img class="img-portfolio img-responsive" src="img/fosset_500_300.jpg" alt="thumbnail fosset open source platform devs branding logo">
+                            <h2>Fosset<br><small>Identité visuelle • 2018</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="ui-ux">
+                        <a href="mooveat.html">
+                            <img class="img-portfolio img-responsive" src="img/mooveat_0.jpg" alt="thumbnail mooveat ui ux design food delivery app">
+                            <h2>MoovEat<br><small>UI Design • 2018</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="motion">
+                        <a href="https://vimeo.com/285123391">
+                            <img class="img-portfolio img-responsive" src="img/orchestra_500_300.jpg" alt="thumbnail motion design à la carte">
+                            <h2>À la carte - Orchestra<br><small>Animation 2D • 2018</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="motion">
+                        <a href="https://vimeo.com/279495550">
+                            <img class="img-portfolio img-responsive" src="img/chain_value_500_300.jpg" alt="chain value oil and gas council">
+                            <h2>Chaîne de valeur - O&GC<br><small>Animation 2D • 2017</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="ui-ux">
+                        <a href="oil_and_gas_council.html">
+                            <img class="img-portfolio img-responsive" src="img/o&gc_webdesign_1.jpg" alt="thumbnail oil & gas council">
+                            <h2>Oil & Gas Council<br><small>Webdesign & Animation 2D • 2017</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="last_mile_for_bop.html">
+                            <img class="img-portfolio img-responsive" src="img/last_mile_for_bop_car.jpg" alt="thumbnail last mile for bop">
+                        <h2>Last Mile For Bop<br><small>Refonte identité visuelle • 2017</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="snezar.html">
+                            <img class="img-portfolio img-responsive" src="img/snezar_2400_1600_0.jpg" alt="snezar south african brand watch">
+                        <h2>Snezar<br><small>Refonte identité visuelle • 2017</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding motion">
+                        <a href="drivy.html">
+                            <img class="img-portfolio img-responsive" src="img/drivy_1_750_500.jpg" alt="thumbnail drivy graphic design">
+                            <h2>Drivy<br><small>Graphisme & Animation 2D • 2015/2016</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="digged_typography.html">
+                            <img class="img-portfolio img-responsive" src="img/digged_750_500_1.jpg" alt="thumbnail typography digged font">
+                            <h2>Digged<br><small>Typographie • 2015</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="branding">
+                        <a href="business_card.html">
+                            <img class="img-portfolio img-responsive" src="img/business_card_500_300.jpg" alt="image business card print">
+                            <h2>Business Card<br><small>Print • 2015</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="ui-ux">
+                        <a href="alumnforce_app.html">
+                            <img class="img-portfolio img-responsive" src="img/alumnforce_app.jpg" alt="thumbnail alumnforce mobile app">
+                            <h2>Alumnforce<br><small>UI-UX Design • 2015</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="ui-ux">
+                        <a href="split_app.html">
+                            <img class="img-portfolio img-responsive" src="img/split_app_500_300.jpg" alt="thumbnail split mobile app">
+                            <h2>Split<br><small>UI-UX Design • 2015</small></h2>
+                        </a>
+        </div>
+        <div class="portfolio-item col-md-4 text-center" data-name="ui-ux">
+                        <a href="egreen_ui.html">
+                            <img class="img-portfolio img-responsive" src="img/egreen_ui_1.jpg" alt="thumbnail egreen web app">
+                            <h2>eGreen<br><small>UI-UX Design • 2014</small></h2>
+                        </a>
+        </div>
+      </div>
+    </div>
+</div>
+
+
 
 <!--
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="#">
                             <img class="img-portfolio img-responsive" src="img/taxiyam.jpg" alt="thumbnail taxiyam game design ">
@@ -57,7 +266,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="#"><a href="portfolio_2023.html">
                             <img class="img-portfolio img-responsive" src="img/new_portfolio_2023.gif" alt="thumbnail nouveau portfolio 2023">
@@ -65,7 +274,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="logo_collection.html">
                             <img class="img-portfolio img-responsive" src="img/logo_collection.jpg" alt="thumbnail logo collection 2017">
@@ -93,10 +302,10 @@
                     </div>
                 </div>
             </div>
--->
+
 
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="https://labergeriedudourelego.log.bzh/">
                             <img class="img-portfolio img-responsive" src="img/labergeriedudourelego.jpg" alt="vignette bergerie dour elego">
@@ -104,7 +313,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="idep.html">
                             <img class="img-portfolio img-responsive" src="img/idep_3.jpg" alt="vignette idep">
@@ -112,7 +321,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="adeo_research.html">
                             <img class="img-portfolio img-responsive" src="img/adeo_research_4.jpg" alt="vignette adeo-research">
@@ -123,7 +332,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="terra_maker.html">
                             <img class="img-portfolio img-responsive" src="img/terra_maker.gif" alt="x">
@@ -131,7 +340,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="https://mbo.plus">
                             <img class="img-portfolio img-responsive" src="img/mbo_plus.jpg" alt="thumbnail MBO+">
@@ -139,7 +348,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="dcw.html">
                             <img class="img-portfolio img-responsive" src="img/dcw.jpg" alt="thumbnail designer chair warehouse">
@@ -150,7 +359,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="orsay_immobilier.html">
                             <img class="img-portfolio img-responsive" src="img/orsay_immobilier.jpg" alt="thumbnail orsay immobilier branding">
@@ -158,7 +367,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="ac_bio.html">
                             <img class="img-portfolio img-responsive" src="img/ac_bio.jpg" alt="thumbnail ac bio ui ux design">
@@ -166,7 +375,8 @@
                         </a>
                     </div>
                 </div>  
-                <div class="col-md-4 text-center">
+
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="le_roux_attorneys_inc.html">
                             <img class="img-portfolio img-responsive" src="img/le_roux_attorneys_inc_0.jpg" alt="brochure le roux attorneys inc">
@@ -177,7 +387,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="lbc_and_cie.html">
                             <img class="img-portfolio img-responsive" src="img/lbcandcie.gif" alt="thumbnail logo lbcandcie">
@@ -185,7 +395,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="the_one.html">
                             <img class="img-portfolio img-responsive" src="img/the_one_2000_1500_0.jpg" alt="thumbnail the one brochure">
@@ -193,7 +404,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="scierie_navet.html">
                             <img class="img-portfolio img-responsive" src="img/scierie_navet_3.jpg" alt="scierie navet eure-et-loir logo">
@@ -204,7 +416,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="https://roziereglobal.com/">
                             <img class="img-portfolio img-responsive" src="img/roziere_global_1.jpg" alt="rozière global site internet vanuatu citoyenneté par investissement">
@@ -212,7 +424,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="inco.html">
                             <img class="img-portfolio img-responsive" src="img/inco_2000_1200.jpg" alt="inco thumbnail">
@@ -220,7 +433,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="powherintech.html">
                             <img class="img-portfolio img-responsive" src="img/powherintech_1000_600.jpg" alt="powherintech inclusive diversity women tech">
@@ -231,7 +445,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="https://entrepreneurs.inco-group.co">
                             <img class="img-portfolio img-responsive" src="img/impact_entrepreneurs_500_300.jpg" alt="xxx">
@@ -239,15 +453,17 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="creative_script.html">
                             <img class="img-portfolio img-responsive" src="img/creative_script.jpg" alt="creative script screenwriter online plateform">
-                        </a>
                         <h2>Creative Script<br><small>Identité visuelle • 2019</small></h2>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="https://vimeo.com/329121769">
                             <img class="img-portfolio img-responsive" src="img/ferme_500_300.jpg" alt="ferme hauts-vergers eure-et-loir">
@@ -256,9 +472,9 @@
                     </div>
                 </div>
             </div>
-        <!--
+
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="mundell.html">
                             <img class="img-portfolio img-responsive" src="img/hugh_mundell_500_300.jpg" alt="hugh mundell story">
@@ -266,7 +482,7 @@
                         <h2>Mundell<br><small>Personal Project • 2022</small></h2>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="rapinstru.html">
                             <img class="img-portfolio img-responsive" src="img/rapinstru_500_300.jpg" alt="rapinstru online platform beatmaker">
@@ -274,7 +490,7 @@
                         <h2>Rapinstru<br><small>Personal Project • 2022</small></h2>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="tempo.html">
                             <img class="img-portfolio img-responsive" src="img/like_a_rolling_ball_500_300.jpg" alt="game design">
@@ -284,7 +500,7 @@
                 </div>  
             </div>
       
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="explore.html">
                             <img class="img-portfolio img-responsive" src="img/explore_500_300.jpg" alt="explore app job-seekers tech jobs">
@@ -292,9 +508,10 @@
                         </a>
                     </div>
                 </div>
-                -->
+
+
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="qubi.html">
                             <img class="img-portfolio img-responsive" src="img/qubi_500_300.jpg" alt="qubi graphic identity logo catering italian restaurant personal chef">
@@ -302,7 +519,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="fosset.html">
                             <img class="img-portfolio img-responsive" src="img/fosset_500_300.jpg" alt="thumbnail fosset open source platform devs branding logo">
@@ -310,7 +527,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
+
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="mooveat.html">
                             <img class="img-portfolio img-responsive" src="img/mooveat_0.jpg" alt="thumbnail mooveat ui ux design food delivery app">
@@ -321,8 +539,7 @@
             </div>
 
             <div class="row">
-
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="https://vimeo.com/285123391">
                             <img class="img-portfolio img-responsive" src="img/orchestra_500_300.jpg" alt="thumbnail motion design à la carte">
@@ -331,7 +548,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="https://vimeo.com/279495550">
                             <img class="img-portfolio img-responsive" src="img/chain_value_500_300.jpg" alt="chain value oil and gas council">
@@ -340,7 +557,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="oil_and_gas_council.html">
                             <img class="img-portfolio img-responsive" src="img/o&gc_webdesign_1.jpg" alt="thumbnail oil & gas council">
@@ -351,7 +568,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="last_mile_for_bop.html">
                             <img class="img-portfolio img-responsive" src="img/last_mile_for_bop_car.jpg" alt="thumbnail last mile for bop">
@@ -360,7 +577,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 text-center"> 
+                <div class="col-md-4 text-center text-center"> 
                     <div class="portfolio-item">
                         <a href="snezar.html">
                             <img class="img-portfolio img-responsive" src="img/snezar_2400_1600_0.jpg" alt="snezar south african brand watch">
@@ -369,8 +586,8 @@
                     </div>
                 </div>
 
-<!--
-                <div class="col-md-4 text-center">
+
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="#">
                             <img class="img-portfolio img-responsive" src="img/alzheimer_webapp_500_300.png" alt="alzheimer online plateform">
@@ -378,9 +595,8 @@
                         <h2>Alzheimer<br><small>Projet d'école • 2016</small></h2>
                     </div>
                 </div>
--->
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="drivy.html">
                             <img class="img-portfolio img-responsive" src="img/drivy_1_750_500.jpg" alt="thumbnail drivy graphic design">
@@ -391,7 +607,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                         <div class="portfolio-item">
                         <a href="digged_typography.html">
                             <img class="img-portfolio img-responsive" src="img/digged_750_500_1.jpg" alt="thumbnail typography digged font">
@@ -400,7 +616,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="business_card.html">
                             <img class="img-portfolio img-responsive" src="img/business_card_500_300.jpg" alt="image business card print">
@@ -409,7 +625,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="alumnforce_app.html">
                             <img class="img-portfolio img-responsive" src="img/alumnforce_app.jpg" alt="thumbnail alumnforce mobile app">
@@ -420,7 +636,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="portfolio-item">
                         <a href="split_app.html">
                             <img class="img-portfolio img-responsive" src="img/split_app_500_300.jpg" alt="thumbnail split mobile app">
@@ -429,7 +645,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                    <div class="portfolio-item">
                         <a href="egreen_ui.html">
                             <img class="img-portfolio img-responsive" src="img/egreen_ui_1.jpg" alt="thumbnail egreen web app">
@@ -440,6 +656,7 @@
             </div>
         </div>
     </div>   
+-->
     <!-- /Portfolio -->
 
 
@@ -456,7 +673,7 @@
                     <br>
                 </div>
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="blog-item">
                         <a href="#">
                             <img class="img-portfolio img-responsive" src="img/xxx_500_300.jpg" alt="blablabla">
@@ -465,7 +682,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="blog-item">
                         <a href="#">
                             <img class="img-portfolio img-responsive" src="img/xxx_500_300.jpg" alt="blablabla">
@@ -474,7 +691,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="blog-item">
                         <a href="#">
                             <img class="img-portfolio img-responsive" src="img/xxx_500_300.jpg" alt="blablabla">
@@ -483,7 +700,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="blog-item">
                         <a href="#">
                             <img class="img-portfolio img-responsive" src="img/xxx_500_300.jpg" alt="blablabla">
@@ -492,7 +709,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center text-center">
                     <div class="blog-item">
                         <a href="#">
                             <img class="img-portfolio img-responsive" src="img/xxx_500_300.jpg" alt="blablabla">
